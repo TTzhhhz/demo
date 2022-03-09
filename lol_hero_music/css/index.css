@@ -1,0 +1,160 @@
+    /* banner begind */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    body {
+        background: url(../img/initial.jpeg);
+        background-size: cover;
+    }
+    /* 设置横幅的宽、高、背景、外边距 阴影 */
+    /* 声明一个图片旋转 */
+    
+    .banner {
+        /* position: relative; */
+        background: no-repeat #1D1934;
+        width: 1000px;
+        height: 250px;
+        margin: 80px;
+        opacity: 0.8;
+        box-shadow: 10px 15px 15px 1px;
+    }
+    /* 设置li样式 */
+    
+    .banner ul {
+        height: 90px;
+    }
+    
+    .banner ul li {
+        float: left;
+        /* position: absolute; */
+        /* display: inline-block; */
+        height: 90px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .banner ul li:nth-child(1) {
+        left: 10px;
+    }
+    
+    .banner ul li:nth-child(2) {
+        left: 110px;
+    }
+    
+    .banner ul li:nth-child(3) {
+        left: 210px;
+    }
+    
+    .banner ul li:nth-child(4) {
+        left: 310px;
+    }
+    
+    .banner ul li img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    @keyframes rotated {
+        from {
+            transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(360deg)
+        }
+    }
+    
+    .banner .rotated {
+        animation: rotated 2s infinite linear;
+    }
+    /* banner end */
+    /* music begin */
+    
+    .music {
+        position: fixed;
+        height: 100px;
+        width: 530px;
+        background-color: #070507;
+        opacity: 0.7;
+        box-shadow: 10px 15px 15px 1px;
+        transition: all 1s;
+        /* transform: translateX(-508px); */
+    }
+    /* .music:hover {} */
+    
+    .music div {
+        position: absolute;
+    }
+    
+    .m_img {
+        /* margin-top: 10px; */
+        width: 80px;
+        height: 80px;
+        /* background-color: green; */
+        top: 10px;
+        left: 10px;
+    }
+    
+    .m_img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20%;
+    }
+    
+    .m_text {
+        left: 110px;
+        height: 100%;
+        line-height: 100px;
+        width: 220px;
+        /* background-color: blue; */
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .m_btn {
+        height: 100%;
+        line-height: 100px;
+        width: 180px;
+        /* background-color: yellow; */
+        right: 20px;
+        font-size: 27px;
+        text-align: center;
+    }
+    
+    .m_btn a {
+        text-decoration: none;
+        color: #84807C;
+        text-align: center;
+        /* background-color: pink; */
+    }
+    
+    .m_btn a:nth-child(2) {
+        margin-left: 6px;
+    }
+    
+    .m_btn a:hover {
+        color: #FFFFFF;
+        /* opacity: 1; */
+    }
+    
+    #m_close {
+        background-color: #84807C;
+        right: 0px;
+        height: 100%;
+        line-height: 100px;
+        width: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    #m_close:hover {
+        color: #FFFFFF;
+    }
+    /* music end */
